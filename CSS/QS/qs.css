@@ -1,0 +1,30 @@
+/*          slide-show              */
+.sld-slds {
+    display: flex;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    flex-direction: row;
+}
+.sld-sld {
+    width: 100%;
+}
+.sld-sld div {
+    width: 50%;
+    background-color: black;
+    font-size: 50px;
+}
+.sld-sld div span {
+    color: #FFF;
+}
+.sld-pints {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    flex-direction: row;
+}
+.sld-pint {
+}
+.sld-pint svg {
+    padding: 5px;
+    height: 10px;
+}
