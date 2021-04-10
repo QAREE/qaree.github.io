@@ -7,13 +7,13 @@ var sld = {
         },
         1 : {
             bg: "https://th.bing.com/th/id/OIP.IwNxwoWIv1u0EKDEbvXXywHaE8?w=264&h=180&c=7&o=5&pid=1.7",
-            txt: "اللغة العربية هي أحد اكثر اللغات السامية المنتشرة في بلاد العالم، وتعتبر هي اللغة الرسمية في جميع بلدان الوطن العربي 2",
+            txt: " الكتاب يمدّ القارئ بكمّيّة هائلة من الكلمات والمصطلحات",
             atxt: "هنا",
             lnk: "./index.html#s1",
         },
         2 : {
             bg: "https://th.bing.com/th/id/OIP.2PZrKOxmCgnEqT6zeCwYRgHaE9?w=264&h=180&c=7&o=5&pid=1.7",
-            txt: "اللغة العربية هي أحد اكثر اللغات السامية المنتشرة في بلاد العالم، وتعتبر هي اللغة الرسمية في جميع بلدان الوطن العربي 3",
+            txt: " سيجد القارئ في الكتب تفاصيل ثقافات دول مختلفة، بواسطة الوصف أو الصور والرسومات المرفقة والتي تدعم الرؤية الواضحة لأقوام ربما لن يستطيع رؤيتهم في أي مكان آخر.",
             atxt: "هنا",
             lnk: "./index.html#f",
         },
@@ -71,10 +71,10 @@ var sldShwAt = setInterval(() => {
     if (lsld == slds && lpint == pints) {
         lsld = 0;
         lpint = 0;
-        document.getElementsByClassName("sld-slds")[0].style.margin = "0 " + (document.getElementsByClassName("sld-slds")[0].children[0].clientWidth) * (-1 * lsld) + "px " + "0 0";
+        document.getElementsByClassName("sld-slds")[0].style.margin = "0 " + (document.getElementsByClassName("sld-slds")[0].children[lsld].clientWidth) * (-1 * lsld) + "px " + "0 0";
         document.getElementsByClassName("sld-pints")[0].children[lpint].children[0].style.fill = "rgba(2, 32, 57, 1)";
     } else {
-        document.getElementsByClassName("sld-slds")[0].style.margin = "0 " + (document.getElementsByClassName("sld-slds")[0].children[0].clientWidth) * (-1 * lsld++) + "px " + "0 0";
+        document.getElementsByClassName("sld-slds")[0].style.margin = "0 " + (document.getElementsByClassName("sld-slds")[0].children[lsld].clientWidth) * (-1 * lsld++) + "px " + "0 0";
         document.getElementsByClassName("sld-pints")[0].children[lpint++].children[0].style.fill = "rgba(2, 32, 57, 1)";
     };
 }, 2000);
