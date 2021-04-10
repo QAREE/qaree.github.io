@@ -2,19 +2,35 @@
 .sld-slds {
     display: flex;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
     flex-direction: row;
 }
 .sld-sld {
     width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
-.sld-sld div {
+.sld-sld>div:first-child {
+    top: 0;
+    width: 100%;
+    background-color: rgba(250, 246, 240, 0.6);
+}
+.sld-sld>div:last-child {
+    padding: 20px;
     width: 50%;
-    background-color: black;
-    font-size: 50px;
+    background-color: rgba(238, 226, 208, 1);
+    border-radius: 0 30px 0 30px;
+    font-size: 25px;
 }
-.sld-sld div span {
-    color: #FFF;
+.sld-sld>div>span {
+    color: rgba(212, 179, 130, 1);
+}
+.sld-sld>div>a {
+    color: rgba(2, 32, 57, 1);
+    text-decoration: none;
+}
+.sld-sld>div>a:hover {
+    text-decoration: underline;
 }
 .sld-pints {
     display: flex;
@@ -22,9 +38,8 @@
     width: 100%;
     flex-direction: row;
 }
-.sld-pint {
-}
-.sld-pint svg {
+.sld-pint>svg {
     padding: 5px;
     height: 10px;
+    fill: rgba(238, 226, 208, 1);
 }
